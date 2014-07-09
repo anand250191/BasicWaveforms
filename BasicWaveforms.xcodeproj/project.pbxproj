@@ -19,6 +19,7 @@
 		17184F68195F583500DD4B8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17184F44195F583500DD4B8F /* Cocoa.framework */; };
 		17184F70195F583500DD4B8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17184F6E195F583500DD4B8F /* InfoPlist.strings */; };
 		17184F72195F583500DD4B8F /* BasicWaveformsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17184F71195F583500DD4B8F /* BasicWaveformsTests.m */; };
+		17184F7E19687E8100DD4B8F /* WaveFormGeneratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17184F7C19687E8100DD4B8F /* WaveFormGeneratorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		17184F6D195F583500DD4B8F /* BasicWaveformsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BasicWaveformsTests-Info.plist"; sourceTree = "<group>"; };
 		17184F6F195F583500DD4B8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17184F71195F583500DD4B8F /* BasicWaveformsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicWaveformsTests.m; sourceTree = "<group>"; };
+		17184F7B19687E8100DD4B8F /* WaveFormGeneratorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveFormGeneratorView.h; sourceTree = "<group>"; };
+		17184F7C19687E8100DD4B8F /* WaveFormGeneratorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveFormGeneratorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		17184F4A195F583500DD4B8F /* BasicWaveforms */ = {
 			isa = PBXGroup;
 			children = (
+				17184F7B19687E8100DD4B8F /* WaveFormGeneratorView.h */,
+				17184F7C19687E8100DD4B8F /* WaveFormGeneratorView.m */,
 				17184F56195F583500DD4B8F /* AppDelegate.h */,
 				17184F57195F583500DD4B8F /* AppDelegate.m */,
 				17184F59195F583500DD4B8F /* MainMenu.xib */,
@@ -258,6 +263,7 @@
 				17184F58195F583500DD4B8F /* AppDelegate.m in Sources */,
 				17184F51195F583500DD4B8F /* main.m in Sources */,
 				17184F5E195F583500DD4B8F /* BasicWaveforms.xcdatamodeld in Sources */,
+				17184F7E19687E8100DD4B8F /* WaveFormGeneratorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +474,7 @@
 				17184F77195F583500DD4B8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17184F78195F583500DD4B8F /* Build configuration list for PBXNativeTarget "BasicWaveformsTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +483,7 @@
 				17184F7A195F583500DD4B8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
