@@ -25,22 +25,9 @@
 
 @implementation WaveFormGeneratorView
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (void)awakeFromNib
 {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self setup];
-    }
-    return self;
-}
-
-- (id)initWithFrame:(NSRect)frameRect
-{
-    self = [super initWithFrame:frameRect];
-    if (self) {
-        [self setup];
-    }
-    return self;
+    [self setup];
 }
 
 - (void)setup
@@ -103,7 +90,8 @@
 - (void)updateDestinationFileURL
 {
     NSString *fileName = [_fileNameTextField stringValue];
-    NSString* filePath = [[[NSFileManager defaultManager] currentDirectoryPath] stringByAppendingPathComponent:fileName];
+    NSString *fileDirectory = [[[NSFileManager defaultManager] URLForDirectory:NSMusicDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil] path];
+    NSString* filePath = [fileDirectory stringByAppendingPathComponent:fileName];
 
     _fileURL = [NSURL fileURLWithPath:filePath];
 }
@@ -114,7 +102,6 @@
     OSStatus fileCreateErr = noErr;
     
     fileCreateErr = AudioFileCreateWithURL((__bridge CFURLRef)_fileURL, kAudioFileAIFFType, &_basicDesc, kAudioFileFlags_EraseFile, &audioFile);
-
     if(fileCreateErr != noErr){
         return;
     }

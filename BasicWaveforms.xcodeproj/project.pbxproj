@@ -20,6 +20,9 @@
 		17184F70195F583500DD4B8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17184F6E195F583500DD4B8F /* InfoPlist.strings */; };
 		17184F72195F583500DD4B8F /* BasicWaveformsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17184F71195F583500DD4B8F /* BasicWaveformsTests.m */; };
 		17184F7E19687E8100DD4B8F /* WaveFormGeneratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17184F7C19687E8100DD4B8F /* WaveFormGeneratorView.m */; };
+		172C8C3B196D7EAC00B66BAD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172C8C3A196D7EAC00B66BAD /* AudioToolbox.framework */; };
+		172C8C3D196D7EB400B66BAD /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172C8C3C196D7EB400B66BAD /* AudioUnit.framework */; };
+		17F73018196D795F0066CE22 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F73017196D795F0066CE22 /* CoreAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		17184F71195F583500DD4B8F /* BasicWaveformsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicWaveformsTests.m; sourceTree = "<group>"; };
 		17184F7B19687E8100DD4B8F /* WaveFormGeneratorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveFormGeneratorView.h; sourceTree = "<group>"; };
 		17184F7C19687E8100DD4B8F /* WaveFormGeneratorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveFormGeneratorView.m; sourceTree = "<group>"; };
+		172C8C3A196D7EAC00B66BAD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		172C8C3C196D7EB400B66BAD /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		17F73017196D795F0066CE22 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172C8C3D196D7EB400B66BAD /* AudioUnit.framework in Frameworks */,
+				172C8C3B196D7EAC00B66BAD /* AudioToolbox.framework in Frameworks */,
+				17F73018196D795F0066CE22 /* CoreAudio.framework in Frameworks */,
 				17184F45195F583500DD4B8F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +109,9 @@
 		17184F43195F583500DD4B8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				172C8C3C196D7EB400B66BAD /* AudioUnit.framework */,
+				172C8C3A196D7EAC00B66BAD /* AudioToolbox.framework */,
+				17F73017196D795F0066CE22 /* CoreAudio.framework */,
 				17184F44195F583500DD4B8F /* Cocoa.framework */,
 				17184F66195F583500DD4B8F /* XCTest.framework */,
 				17184F46195F583500DD4B8F /* Other Frameworks */,
